@@ -24,18 +24,18 @@ public class BinaryTreeImplementation {
         //manual create binary tree
         root.setLeft(node2);
         root.setRight(node3);
-        node3.setLeft(node4);
-        node3.setRight(node5);
+        node3.setLeft(node5);
+        node3.setRight(node4);
         binaryTree.setRoot(root);
 
         System.out.println("Preorder: ");
-        binaryTree.preOrder();
+        binaryTree.preOrder();  // 1, 2, 3, 5, 4
 
         System.out.println("InfixOrder: ");
-        binaryTree.infixOrder();
+        binaryTree.infixOrder(); //2, 1, 5, 3, 4
 
         System.out.println("PostOrder: ");
-        binaryTree.postOrder();
+        binaryTree.postOrder(); // 2, 5, 4, 3, 1
     }
 }
 
